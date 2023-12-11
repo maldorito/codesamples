@@ -1,0 +1,61 @@
+//----------------------------------------
+// Block - Three Latest Posts Styles, FRONTEND
+//----------------------------------------
+
+@screen max-tablet-portrait {
+	.mobile-hidden {
+		display: none;
+	}
+}
+
+.wds-block-three-latest-posts {
+	@apply max-w-sm;
+
+	.latest-post {
+		@apply mb-24;
+
+		a {
+			@apply no-underline;
+
+			.latest-post-image-content {
+				@apply relative flex mx-0 pb-16 justify-end w-full;
+
+				.reading-time {
+					@apply flex flex-row justify-items-center space-x-4 mt-12 mr-12 px-6 py-2 absolute z-10 bg-white;
+					color: var( --wp--preset--color--secondary );
+				}
+
+				.latest-post-image {
+					@apply z-0 w-full;
+
+					img {
+						@apply flex relative w-full object-cover;
+					}
+				}
+			}
+			.latest-post-title {
+				@apply capitalize;
+				font-size: var( --wp--preset--font-size--headline-20 );
+				font-family: var( --wp--preset--font-family--headline-heavy );
+			}
+		}
+
+		a:hover {
+			@apply underline;
+		}
+	}
+	.latest-posts-cta {
+		@apply flex justify-end;
+		font-size: var( --wp--preset--font-size--normal );
+
+		a {
+			@apply uppercase no-underline;
+			color: var( --wp--preset--color--secondary );
+			font-family: var( --wp--preset--font-family--headline-heavy );
+		}
+
+		a:hover {
+			@apply underline;
+		}
+	}
+}

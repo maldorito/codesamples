@@ -1,0 +1,32 @@
+{
+	"name": "apb/inquiries",
+	"title": "Inquiries Block",
+	"description": "This block displays contact information.",
+	"editorStyle": "file:./editor.css",
+	"editorScript": "file:./editor.js",
+	"style": "file:./style-script.css",
+	"script": "file:./script.js",
+	"category": ["WDS", "APB"],
+	"icon": "table-row-before",
+	"apiVersion": 2,
+	"keywords": [ "inquiries", "inquiries", "block" ],
+	"acf": {
+		"mode": "auto",
+		"renderTemplate": "inquiries.php"
+	},
+	"supports": {
+		"align": false,
+		"anchor": true,
+		"color": true,
+		"customClassName": true,
+		"jsx": true
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"_is_preview": "true"
+			}
+		}
+	}
+}

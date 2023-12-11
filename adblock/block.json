@@ -1,0 +1,32 @@
+{
+	"name": "apb/adblock",
+	"title": "Ad Block",
+	"description": "This block displays AdSanity ads.",
+	"editorStyle": "file:./editor.css",
+	"editorScript": "file:./editor.js",
+	"style": "file:./style-script.css",
+	"script": "file:./script.js",
+	"category": "APB",
+	"icon": "table-row-before",
+	"apiVersion": 2,
+	"keywords": [ "adblock", "adblock", "block" ],
+	"acf": {
+		"mode": "auto",
+		"renderTemplate": "adblock.php"
+	},
+	"supports": {
+		"align": false,
+		"anchor": true,
+		"color": true,
+		"customClassName": true,
+		"jsx": true
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"_is_preview": "true"
+			}
+		}
+	}
+}

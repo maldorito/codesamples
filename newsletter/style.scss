@@ -1,0 +1,198 @@
+//----------------------------------------
+// Block - Newsletter Styles, FRONTEND
+//----------------------------------------
+@import 'widget';
+
+@screen max-tablet-portrait {
+	.wds-block-newsletter {
+		@apply container px-24 py-24;
+		max-width: 354px;
+
+		.newsletter-content {
+			@apply flex flex-col;
+
+			.newsletter-headline {
+				@apply flex uppercase pb-4;
+				color: var( --wp--preset--color--white );
+				line-height: 1.23;
+
+				h1 {
+					font-size: var( --wp--preset--font-size--medium-25 );
+				}
+			}
+
+			.newsletter-form {
+				@apply w-full;
+
+				.acf-innerblocks-container {
+					div {
+						.gform_confirmation_message {
+							color: var( --wp--preset--color--white );
+						}
+					}
+					form {
+						.gform-body {
+							@apply pb-16;
+							.gform_fields {
+								.gfield {
+									.ginput_container {
+										input.large {
+											@apply w-full py-12 border text-center;
+											border-color: var( --wp--preset--color--primary );
+											background-color: var( --wp--preset--color--white );
+											font-family: var( --wp--preset--font-family--headline-reg );
+										}
+									}
+								}
+							}
+						}
+						.gform_footer {
+							@apply m-0 p-0 ;
+							input {
+								@apply w-full mb-0 py-12 font-black uppercase;
+								background-color: var( --wp--preset--color--primary );
+								color: var( --wp--preset--color--black );
+								font-family: var( --wp--preset--font-family--headline-reg );
+							}
+						}
+					}
+				}
+
+				span.ctct-label-top {
+					display: none;
+				}
+
+				.ctct-form-wrapper {
+					@apply w-full mb-0;
+
+					p.ctct-form-field {
+						@apply w-full;
+					}
+
+					input.ctct-email {
+						@apply w-full border text-center;
+						border-color: var( --wp--preset--color--primary );
+						background-color: var( --wp--preset--color--white );
+						font-family: var( --wp--preset--font-family--headline-reg );
+					}
+
+					p.ctct-form-field-submit {
+						@apply w-full mb-0;
+					}
+
+					input.ctct-submit {
+						@apply w-full font-black;
+						background-color: var( --wp--preset--color--primary );
+						color: var( --wp--preset--color--black );
+						font-family: var( --wp--preset--font-family--headline-reg );
+					}
+					.ctct-disclosure {
+						hr {
+							display: none;
+						}
+						small {
+							color: var( --wp--preset--color--white );
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@screen tablet-portrait {
+	.wds-block-newsletter {
+		@apply container px-24 py-40;
+		max-width: 354px;
+
+		.newsletter-content {
+			@apply flex flex-col;
+
+			.newsletter-headline {
+				@apply flex uppercase pb-48;
+				color: var( --wp--preset--color--white );
+				line-height: 1.23;
+
+				h1 {
+					font-size: var( --wp--preset--font-size--xlarge-39 );
+				}
+			}
+
+			.newsletter-form {
+				@apply w-full;
+
+				.acf-innerblocks-container {
+					div {
+						.gform_confirmation_message {
+							color: var( --wp--preset--color--white );
+						}
+					}
+					form {
+						.gform-body {
+							@apply pb-16;
+							.gform_fields {
+								.gfield {
+									.ginput_container {
+										input.large {
+											@apply w-full py-12 border text-center;
+											border-color: var( --wp--preset--color--primary );
+											background-color: var( --wp--preset--color--white );
+											font-family: var( --wp--preset--font-family--headline-reg );
+										}
+									}
+								}
+							}
+						}
+						.gform_footer {
+							@apply m-0 p-0 ;
+							input {
+								@apply w-full mb-0 py-12 font-black uppercase;
+								background-color: var( --wp--preset--color--primary );
+								color: var( --wp--preset--color--black );
+								font-family: var( --wp--preset--font-family--headline-reg );
+							}
+						}
+					}
+				}
+
+				span.ctct-label-top {
+					display: none;
+				}
+
+				.ctct-form-wrapper {
+					@apply w-full mb-0;
+
+					p.ctct-form-field {
+						@apply w-full;
+					}
+
+					input.ctct-email {
+						@apply w-full border text-center;
+						border-color: var( --wp--preset--color--primary );
+						background-color: var( --wp--preset--color--white );
+						font-family: var( --wp--preset--font-family--headline-reg );
+					}
+
+					p.ctct-form-field-submit {
+						@apply w-full mb-0;
+					}
+
+					input.ctct-submit {
+						@apply w-full font-black;
+						background-color: var( --wp--preset--color--primary );
+						color: var( --wp--preset--color--black );
+						font-family: var( --wp--preset--font-family--headline-reg );
+					}
+					.ctct-disclosure {
+						hr {
+							display: none;
+						}
+						small {
+							color: var( --wp--preset--color--white );
+						}
+					}
+				}
+			}
+		}
+	}
+}

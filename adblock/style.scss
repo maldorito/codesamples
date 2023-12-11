@@ -1,0 +1,28 @@
+//----------------------------------------
+// Block - Ad block Styles, FRONTEND
+//----------------------------------------
+
+@screen max-tablet-portrait {
+	.adblock-header {
+		@apply text-xs;
+	}
+	.adblock-ad {
+		div[class*='ad-'] {
+			@apply h-fit;
+		}
+
+		.acf-innerblocks-container {
+			div[class*='ad-'] {
+				@apply h-fit;
+			}
+		}
+	}
+}
+
+.wds-block-adblock {
+	@apply container flex flex-col relative bg-cover bg-center;
+
+	.adblock-header {
+		@apply absolute left-1/2 -top-32 -translate-x-1/2 uppercase text-center text-gray py-10;
+	}
+}
